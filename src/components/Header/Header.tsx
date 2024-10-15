@@ -1,7 +1,6 @@
 import { Box, Container, Icon, Link } from '@chakra-ui/react'
 
-import { iconSvg } from '../../constants/iconSvg'
-import { navbarPage } from '../../constants/navbarPage'
+import { iconSvg, navbarPage } from '../../constants'
 
 import { linkIconStyle, containerStyle, iconStyle, logoStyle, navbarPageStyle } from './HeaderStyle'
 

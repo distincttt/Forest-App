@@ -1,12 +1,13 @@
 import { Box, Heading, Image, Link } from '@chakra-ui/react'
 
+import { bgImageStyle } from '../BannerStyle.ts'
+
 import {
    leftSideBoxStyle,
    leftSideBtnStyle,
    leftSideH1BoxStyle,
    leftSideH1Style,
 } from './BannerLeftSideStyle.ts'
-import { bgImageStyle } from '../BannerStyle.ts'
 
 interface BannerLeftSideProps {
    image: string

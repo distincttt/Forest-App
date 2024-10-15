@@ -1,13 +1,14 @@
 import { Box, Container } from '@chakra-ui/react'
 
-import { useBanner } from '../../shared/hooks'
+import { useBanner } from '../../shared'
+
 import { BannerLeftSide } from './BannerLeftSide/BannerLeftSide'
+import { BannerRightSide } from './BannerRightSide/BannerRightSide'
+import { BannerRightSideBtn } from './BannerRightSideBtns/BannerRightSideBtns'
 
 import { containerStyle } from './BannerStyle'
-import { BannerRightSide } from './BannerRightSide/BannerRightSide'
-import { BannerRightSideBtn } from './BannerRightSide/BannerRightSideBtns/BannerRightSideBtns'
 
-export const BannerWrapper = (): JSX.Element => {
+export const Banner = (): JSX.Element => {
    const [forests, navigateBtns] = useBanner()
    return (
       <Container {...containerStyle}>

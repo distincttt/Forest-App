@@ -1,1 +1,1 @@
-export { BannerWrapper } from './BannerWrapper'
+export { Banner } from './Banner'

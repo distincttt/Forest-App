@@ -1,4 +1,4 @@
-import { Forest } from '../shared/types'
+import { Forest } from '../shared'
 
 export const forestsStart: Forest[] = [
    {

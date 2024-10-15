@@ -1,4 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react'
+
 import { rightSideBoxStyle, rightSideH1Style, rightSideH3Style } from './BannerRightSideStyle'
 
 interface BannerRightSideProps {

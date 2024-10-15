@@ -1,3 +1,3 @@
-import { NavbarPage } from '../shared/types'
+import { NavbarPage } from '../shared'
 
 export const navbarPage: NavbarPage = ['Destinations', 'Booking', 'Services', 'Contact']

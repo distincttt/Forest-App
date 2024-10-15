@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { Forest, NavigateBtn } from '../types'
-import { forestsStart } from '../../constants/forestsStart'
+import { forestsStart } from '../../constants'
 
 export const useBanner = (): [Forest[], NavigateBtn[]] => {
    const [forests, setForest] = useState(forestsStart)
@@ -16,15 +16,13 @@ export const useBanner = (): [Forest[], NavigateBtn[]] => {
          if (forestNumber < 0) forestNumber = forests.length - 1
       }
 
-      const newForests = forests.map((forest) => {
-         return { ...forest, visible: false }
-      })
-
-      setForest([
-         ...newForests.slice(0, forestNumber),
-         { ...forests[forestNumber], visible: true },
-         ...newForests.slice(forestNumber + 1),
-      ])
+      setForest((prev) =>
+         prev.map((forest, index) => {
+            if (index === forestNumber) forest.visible = true
+            else forest.visible = false
+            return forest
+         }),
+      )
    }
 
    const navigateBtns: NavigateBtn[] = [
