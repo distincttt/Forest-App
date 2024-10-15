@@ -1,11 +1,11 @@
 import { Box, Container, Icon, Link } from '@chakra-ui/react'
 
-import { useHeader } from '../../shared/hooks'
+import { iconSvg } from '../../constants/iconSvg'
+import { navbarPage } from '../../constants/navbarPage'
 
 import { linkIconStyle, containerStyle, iconStyle, logoStyle, navbarPageStyle } from './HeaderStyle'
 
 export const Header = (): JSX.Element => {
-   const [iconSvg, navbarPage] = useHeader()
    return (
       <Container {...containerStyle}>
          <Link {...logoStyle}>Forest.</Link>
@@ -18,9 +18,9 @@ export const Header = (): JSX.Element => {
                </Link>
             ))}
          </Box>
-         <Box>
+         <Box display={'flex'}>
             {navbarPage.map((text, i) => (
-               <Link key={i} {...navbarPageStyle}>
+               <Link as='nav' key={i} {...navbarPageStyle}>
                   {text}
                </Link>
             ))}
