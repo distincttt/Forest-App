@@ -38,10 +38,10 @@ export const BannerLeftSide = ({
                <Heading {...leftSideH1Style}>{firstName}</Heading>
             </Box>
             <Box {...leftSideH1BtnWrapperStyle}>
-               <Heading as='h3' fontSize={[12, 16, 20]}>
+               <Heading as='h3' fontSize={[10, 14, 20]}>
                   {numberForest}
                </Heading>
-               <Box as='p' fontSize={[10, 12, 16]} m={'10px 20px 15px 0'}>
+               <Box as='p' fontSize={[8, 10, 16]} m={'10px 20px 15px 0'}>
                   {description}
                </Box>
                <Link {...leftSideBtnStyle}>More Details</Link>

@@ -34,7 +34,7 @@ export const leftSideH1BtnWrapperStyle = defineStyle({
 
 export const leftSideH1Style = defineStyle({
    as: 'h1',
-   fontSize: [120, 190, 250],
+   fontSize: [110, 180, 250],
    textShadow: '0 0 10px rgba(255, 255, 255, .8)',
 } as HeadingProps)
 
