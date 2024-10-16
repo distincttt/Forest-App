@@ -21,12 +21,18 @@ export const logoStyle = defineStyle({
    _hover: { textDecoration: 'none' },
 })
 
+export const iconWrapperStyle = defineStyle({
+   m: [0, 0, '0 auto 0 50px'],
+   pos: ['absolute', 'absolute', 'relative'],
+   top: ['70%', '70%', null],
+})
+
 export const linkIconStyle = defineStyle({
    display: 'inline-flex',
    justifyContent: 'center',
    alignItems: 'center',
-   w: '40px',
-   h: '40px',
+   w: ['30px', '35px', '40px'],
+   h: ['30px', '35px', '40px'],
    background: 'transparent',
    border: '2px solid #fff',
    borderRadius: 6,

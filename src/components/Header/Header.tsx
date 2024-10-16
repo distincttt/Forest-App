@@ -2,13 +2,20 @@ import { Box, Container, Icon, Link } from '@chakra-ui/react'
 
 import { iconSvg, navbarPage } from '../../constants'
 
-import { linkIconStyle, containerStyle, iconStyle, logoStyle, navbarPageStyle } from './HeaderStyle'
+import {
+   linkIconStyle,
+   containerStyle,
+   iconStyle,
+   logoStyle,
+   navbarPageStyle,
+   iconWrapperStyle,
+} from './HeaderStyle'
 
 export const Header = (): JSX.Element => {
    return (
-      <Container {...containerStyle}>
+      <Container {...containerStyle} justifyContent={'space-between'}>
          <Link {...logoStyle}>Forest.</Link>
-         <Box m={'0 auto 0 50px'}>
+         <Box {...iconWrapperStyle}>
             {iconSvg.map((svg, i) => (
                <Link key={i} {...linkIconStyle}>
                   <Icon {...iconStyle}>
@@ -17,7 +24,7 @@ export const Header = (): JSX.Element => {
                </Link>
             ))}
          </Box>
-         <Box display={'flex'}>
+         <Box display={['box', 'flex', 'flex']} flexDir={['column', 'column', 'row']}>
             {navbarPage.map((text, i) => (
                <Link as='nav' key={i} {...navbarPageStyle}>
                   {text}

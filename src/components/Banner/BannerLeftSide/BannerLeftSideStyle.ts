@@ -25,9 +25,16 @@ export const leftSideH1BoxStyle = defineStyle({
    },
 } as BoxProps)
 
+export const leftSideH1BtnWrapperStyle = defineStyle({
+   pos: 'absolute',
+   bottom: 2,
+   left: '10%',
+   color: '#fff',
+} as BoxProps)
+
 export const leftSideH1Style = defineStyle({
    as: 'h1',
-   fontSize: 250,
+   fontSize: [120, 190, 250],
    textShadow: '0 0 10px rgba(255, 255, 255, .8)',
 } as HeadingProps)
 
